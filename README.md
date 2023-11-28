@@ -7,3 +7,8 @@ Com foco na resolução de desafios comuns, como superlotação e falta de recur
 O projeto encontra-se atualmente em andamento. O design foi definido e implementado, permitindo o cadastro efetivo de animais, os quais são armazenados de maneira organizada em um banco de dados. Essas informações são disponibilizadas de forma acessível na seção "Adote" da página, proporcionando uma plataforma interativa para potenciais adotantes.
 
 Adicionalmente, o sistema contempla o registro de voluntários, cujas informações são igualmente armazenadas de maneira estruturada no banco de dados. Esta funcionalidade visa facilitar o envolvimento da comunidade interessada em contribuir com atividades voluntárias.
+
+# Tecnologias Utilizadas
+Front End: HTML, Handlebars, CSS/Bootstrap, Javascript, Ajax
+Back End: NodeJS, ExpressJS, Nodemon, Express-Handlebars, Express-Sessions
+Banco de Dados: MySQL, Sequelize
