@@ -10,5 +10,7 @@ Adicionalmente, o sistema contempla o registro de voluntários, cujas informaç�
 
 # Tecnologias Utilizadas
 Front End: HTML, Handlebars, CSS/Bootstrap, Javascript, Ajax
+
 Back End: NodeJS, ExpressJS, Nodemon, Express-Handlebars, Express-Sessions
+
 Banco de Dados: MySQL, Sequelize
