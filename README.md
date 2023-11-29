@@ -15,21 +15,33 @@ Back End: NodeJS, ExpressJS, Nodemon, Express-Handlebars, Express-Sessions
 
 Banco de Dados: MySQL, Sequelize
 
-#Inicializando o Projeto
+# Inicializando o Projeto
 Banco de dados: MySQL
+
 Instalar o MySQL server na versão server only
+
 Selecionar a máquina como Development Machine
+
 Adicionar a variável de a,biente do local da pasta \bin do MySQL
 
 Back End: npm
+
 npm install --save body-parser
+
 npm install --save connect-flash
+
 npm install dotenv --save
+
 npm install --save express
+
 npm install --save express-handlebars
+
 npm install --save express-session
+
 npm install --save multer
+
 npm install --save mysql2
+
 npm install --save sequelize
 
 
