@@ -45,6 +45,14 @@ npm install --save mysql2
 
 npm install --save sequelize
 
+# Aplicação online em localhost
+No terminal, colocar o comando: mysql -h localhost -u root -p
+
+A senha do MySQL será solicitada, devendo ser inserida a mesma senha que foi definida na conexão (db.js, dentro de templates).
+
+Em outro terminal, navegar até a pasya em que está localizado o arquivo index.js e colocar o comando: nodemon index.js
+
+
 # Códigos
 
 ## Index.js
