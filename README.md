@@ -50,10 +50,10 @@ npm install --save sequelize
 ## Index.js
 Arquivo com as principais configurações e imports das bibliotecas usadas, também é nele que estão configurados os seguintes itens:
 
-> Middleware
-> Engine (como o main-template do handlebars)
-> Body-parser
-> Diretório público para arquivos estáticos (funções javascript pro front-end, arquivos CSS, páginas estáticas HTML)
+- Middleware
+- Engine (como o main-template do handlebars)
+- Body-parser
+- Diretório público para arquivos estáticos (funções javascript pro front-end, arquivos CSS, páginas estáticas HTML)
 
 ### Rotas
 A partir do express, definido como app, é utilizado o app.get para definir a rota para as páginas. 
