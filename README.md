@@ -24,7 +24,8 @@ Selecionar a máquina como Development Machine
 
 Adicionar a variável de a,biente do local da pasta \bin do MySQL
 
-### Back End: npm
+### Back End: Dependências
+npm install -g node
 
 npm install --save body-parser
 
