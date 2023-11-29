@@ -45,6 +45,45 @@ npm install --save mysql2
 
 npm install --save sequelize
 
+# Códigos
+
+## Index.js
+Arquivo com as principais configurações e imports das bibliotecas usadas, também é nele que estão configurados os seguintes itens:
+
+> Middleware
+> Engine (como o main-template do handlebars)
+> Body-parser
+> Diretório público para arquivos estáticos (funções javascript pro front-end, arquivos CSS, páginas estáticas HTML)
+
+### Rotas
+A partir do express, definido como app, é utilizado o app.get para definir a rota para as páginas. 
+
+O “app.get(“/”, (req, res) => { res.render(‘home’)});” captura o evento get e recebe os parâmetros “req” e “res”, passando através da arrow function para enviar e renderizar a página home, que está localizada em “views/home.handlebars”.
+
+Os demais itens funcionam da mesma forma, com um adendo no “adote”, que também é passado o “Pet.findAll().then(function(pets){ res.render(‘adote’,{pets:pets}); });”. O Pet.findAll() é responsável por pegar os dados no mysql, e após o “adote” são passados os parâmetros, seguindo a mesma linha em “/ajudando”.
+
+Em app.post está o redirecionamento utilizado no html para fazer os cadastros necessários, como dados e caminhos de imagens.
+
+Por fim, em “app.listen(8585, function(){});” é definida a porta em que o servidor irá abrir, como foi definido em localhost, nesse caso o acesso se dá por “localhost:8585/”.
+
+## Models
+Na pasta models estão os modelos das tabelas que foram usadas, sendo db.js para a conexão e, nas demais, apenas um ORM para cadastro e criação das tabelas.
+
+## Public
+Na pasta public estão localizados todos os arquivos estáticos, como CSS personalizado, HTML padrão, cube.js
+
+## Routes
+Na pasta routes, a princípio seguiria o index.js, porém com rotas personalizadas conforme a permissão do usuário, como admin, usuário logado.
+
+## Views
+Em “views” se encontram os templates capturados através do handlebars, não sendo necessário colocar a extensão na hora de chamar o arquivo. 
+
+Dentro de “views” temos o “layouts”, responsável pelo layout principal e importar arquivos como CDN, configurações básicas da página como meta charset.
+
+Abaixo de “layouts” temos a pasta “partials”, local em que estão os arquivos chamados em diversas páginas, tendo como finalidade a organização. Em “_navbar.handlebars” está localizado apenas a barra de navegação presente em todas as páginas.
+
+Para identificar o arquivo da barra de navegação dentro do main.handlebars é utilizado {{>_navbar}}, enquanto com {{{body}}} os arquivos do corpo é chamado automaticamente.
+
 
 # Próximos Passos
 Criação de um usuário Administrador para uma gestão eficiente de diversos aspectos do sistema, como o controle de voluntários, gerenciamento de animais para adoção, manutenção, gerenciamento de conteúdo e personalização da aplicação.
